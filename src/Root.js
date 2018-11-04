@@ -6,7 +6,7 @@ import reducers from 'reducers'
 
 export default ({ children, initialState = {} }) => {
     const store = createStore(reducers, initialState, applyMiddleware(ReduxPromise));
-    return(
+    return (
         <Provider store={store}>
             {children}
         </Provider>
