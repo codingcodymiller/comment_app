@@ -6,9 +6,9 @@ import App from 'components/App';
 
 ReactDOM.render(
   <Root>
-    <BrowserRouter>
-      <Route exact path="/" component={App} />
-    </BrowserRouter>
+    <Router>
+      <Route path="/" component={App} />
+    </Router>
   </Root>,
   document.querySelector('#root')
 );
